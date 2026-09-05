@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoLab | Quiénes Somos</title>
+
+    <link rel="stylesheet" href="css/style-quienesomos.css">
+    <link rel="icon" type="image/png" href="img/logo-ico.webp">
+   
+</head>
+<body>
+    <header class="hero">
+        <nav>
+
+            <a href="index.html" class="logo-menu">
+                <img src="img/logo-tecnolab.webp" alt="Tecnolab">
+            </a>
+            
+            <div class="menu-hero">
+                <a href="index.html">Inicio</a>
+                <a href="quienes-somos.html">Quiénes Somos</a>
+                <a href="Planos.html">Planos Esquemáticos</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+
+            <div class="descripcion">
+                <span></span>
+            </div>
+
+            <div class="hero-texto">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="quienes-somos">
+
+            <h1>Quiénes Somos</h1>
+            
+            <div class="historia-tecnolab">
+
+                <h2>Nuestra Historia</h2>
+                
+                <p>TecnoLab nace con el propósito de brindar una segunda
+                    oportunidad a los equipos electrónicos y responder a la
+                    necesidad de servicios de diagnóstico y reparación cada vez
+                    más especializados. Nuestro compromiso es ofrecer al cliente un proceso técnico
+                    transparente, responsable y fundamentado en el conocimiento.</p>
+            </div>            
+            <div class="mision-vision">
+                <div class="mision">
+                    <h2>Nuestra Misión</h2>                    
+                    <p> Brindar soluciones tecnológicas confiables mediante
+                        diagnóstico, reparación y recuperación especializada.</p>
+                </div>
+                <div class="vision">
+                    <h2>Nuestra Visión</h2>
+                    <p> Consolidarnos como una empresa reconocida por la calidad
+                        de sus servicios técnicos, la innovación.</p>
+                </div>
+            </div>
+        </section>
+    </main>        
+<footer>
+
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/logo-tecnolab.webp" class="logo-footer" alt="reparacion de portatiles">
+            <p><img src="ico/ico-llamada.webp" class="phone-ico" alt="telefono"> <img src="ico/ico-whatsapp.webp" class="whatsapp-ico" alt="whatsapp"> 304 385 7629</p>
+            <p><img src="ico/ico-ubicacion.webp" class="location-ico" alt="ubicacion"> Cra 43 #12b-27 Barrio Panamericano • Cali, Colombia.</p>
+        </div>
+        <div class="footer-servicios">
+            <h3>Servicios</h3>
+            <ul>
+                <p>Reparación de Portátiles</p>
+                <p>Reparación de Macbooks y iPhones</p>
+                <p>Reparación de Equipos Gamer y Consolas</p>
+                <p>Recuperación de Datos</p>
+                <p>Reparación de Televisores</p>
+            </ul>
+        </div>
+        <div class="footer-servicios">            
+            <h3>Nosotros</h3>
+            
+            <ul class="footer-links">
+                <ul class="footer-links">
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="Planos.html">Planos Esquemáticos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+<div class="whatsapp-contenedor">
+    <div class="whatsapp-chat">
+        <div class="whatsapp-chat-titulo">
+            Escríbenos
+        </div>
+        <textarea
+            id="mensajeWhatsApp"
+            placeholder="Escribe tu mensaje..."
+            rows="3"></textarea>
+        <button type="button" id="btnEnviarWhatsApp" target="_blank">
+            Enviar por WhatsApp
+        </button>
+    </div>
+    <a href="https://wa.me/573043857629"
+        class="whatsapp-rgb"
+        target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-rgb-icon">
+            <img src="ico/ico-what-flot.webp" alt="WhatsApp">
+        </span>
+    </a>
+</div>
+
+<script>
+const botonWhatsApp = document.getElementById("btnEnviarWhatsApp");
+botonWhatsApp.addEventListener("click", function () {
+    const campo = document.getElementById("mensajeWhatsApp");
+    const mensaje = campo.value.trim();
+    if (mensaje === "") {
+        campo.focus();
+        return;
+    }
+    const numero = "573043857629";
+    const enlaceWhatsApp =
+        "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
+
+    window.open(enlaceWhatsApp, "_blank");
+    campo.value = "";
+});
+</script>
+
+</body>
+</html>

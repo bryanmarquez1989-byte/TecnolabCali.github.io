@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoLab | Contacto</title>
+
+    <link rel="stylesheet" href="css/style-contacto.css">
+    <link rel="icon" type="image/png" href="img/logo-ico.webp">
+
+   
+</head>
+<body>
+    <header class="hero">
+        <nav>
+
+            <a href="index.html" class="logo-menu">
+                <img src="img/logo-tecnolab.webp" alt="Tecnolab">
+            </a>
+            
+            <div class="menu-hero">
+                <a href="index.html">Inicio</a>
+                <a href="quienes-somos.html">Quiénes Somos</a>
+                <a href="Planos.html">Planos Esquemáticos</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+
+            <div class="descripcion">
+                <span></span>
+            </div>
+
+            <div class="hero-texto">
+                <h1></h1>
+                <p></p>
+            </div>
+
+        </div>
+</header>
+
+<main class="contacto">
+
+        <h1>CONTÁCTANOS</h1>
+
+        <p class="contacto-intro">
+            Cuéntanos qué equipo necesitas revisar y cuál es el problema que presenta.
+            Nuestro equipo se pondrá en contacto contigo para orientarte.</p>
+
+        <section class="contacto-contenedor">
+            <div class="contacto-formulario">
+
+                <h2>SOLICITA TU SOPORTE TÉCNICO</h2>
+                <form id="formularioContacto">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu Nombre"
+                            autocomplete="name"
+                            required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Número de Celular</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Ej. 321 333 3232"
+                            autocomplete="tel"
+                            required>
+                    </div>
+
+                    <div class="campo">
+                        <label>¿Cómo prefieres que te contactemos?</label>
+                        <div class="opciones-contacto">
+                            <label class="opcion">
+                                <input
+                                    type="radio"
+                                    name="medio"
+                                    value="WhatsApp"
+                                    checked>
+                                <span>WhatsApp</span>
+                            </label>
+
+                            <label class="opcion">
+                                <input
+                                    type="radio"
+                                    name="medio"
+                                    value="Llamada">
+                                <span>Llamada</span>
+                            </label>
+
+                            <label class="opcion">
+                                <input
+                                    type="radio"
+                                    name="medio"
+                                    value="WhatsApp o llamada">
+                                <span>Ambos</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="equipo">Equipo a revisar</label>
+                        <select id="equipo" name="equipo" required>
+                            <option value="" selected disabled>
+                                Selecciona el equipo
+                            </option>
+                            <option value="Computador de escritorio">
+                                Computador de Escritorio
+                            </option>
+                            <option value="Portátil">
+                                Portátil o Laptop
+                            </option>
+                            <option value="MacBook">
+                                MacBook Air / Pro / M4
+                            </option>
+                            <option value="iPhone / Android">
+                                iPhone / Android
+                            </option>
+                            <option value="Televisor">
+                                Televisor LED / OLED / QLED
+                            </option>
+                            <option value="Consola">
+                                Consola Xbox / PlayStation
+                            </option>
+                            <option value="Datos">
+                                Recuperación de Datos (HDD-SDD)
+                            </option>
+                            <option value="Apps y Software">
+                                Desarrollo de Software / Aplicaciones
+                            </option>
+                            <option value="Otro">
+                                Otro
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="problema">
+                            Descripción breve del problema
+                        </label>
+                        <textarea
+                            id="problema"
+                            name="problema"
+                            rows="5"
+                            maxlength="500"
+                            placeholder="Ej. El equipo enciende pero no muestra imagen..."
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn-contacto">
+                        ENVIAR SOLICITUD
+                    </button>
+                    <p id="mensajeFormulario" class="mensaje-formulario"></p>
+                </form>
+            </div>
+
+            <div class="contacto-info">
+                <h2>TECNOLAB</h2>
+
+                <p> Soluciones técnicas especializadas para equipos
+                    de cómputo, Dispotivos Móviles, Consolas de Video Juegos, Desarrollo (creación de 
+                    Apps, páginas web, software Desktop y más), Recuperación de Datos,
+                    y mucho más.</p>
+
+                <div class="info-item">
+                    <strong>WhatsApp y Llamadas</strong>
+                    <span>+57 304 385 7629</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Atención</strong>
+                    <span>Cita Previa y Soporte a Domicilio</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Ubicación</strong>
+                    <span>Cali, Colombia</span>
+                </div>
+
+                <div class="info-separador"></div>
+
+                <p class="info-nota">
+                    La información suministrada será utilizada para
+                    conocer tu necesidad y brindarte una orientación inicial.</p>
+            </div>
+        </section>
+    </main>        
+</body>
+<footer>
+<div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/logo-tecnolab.webp" class="logo-footer" alt="reparacion de portatiles">
+            <p><img src="ico/ico-llamada.webp" class="phone-ico" alt="telefono"> <img src="ico/ico-whatsapp.webp" class="whatsapp-ico" alt="whatsapp"> 304 385 7629</p>
+            <p><img src="ico/ico-ubicacion.webp" class="location-ico" alt="ubicacion"> Cra 43 #12b-27 Barrio Panamericano • Cali, Colombia.</p>
+        </div>
+        <div class="footer-servicios">
+            <h3>Servicios</h3>
+            <ul>
+                <p>Reparación de Portátiles</p>
+                <p>Reparación de Macbooks y iPhones</p>
+                <p>Reparación de Equipos Gamer y Consolas</p>
+                <p>Recuperación de Datos</p>
+                <p>Reparación de Televisores</p>
+            </ul>
+        </div>
+        <div class="footer-servicios">            
+            <h3>Nosotros</h3>
+            <ul class="footer-links">
+
+                <ul class="footer-links">
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="Planos.html">Planos Esquemáticos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+            </ul>
+        </div>
+</div>
+
+</footer>
+
+
+<div class="whatsapp-contenedor">
+    <div class="whatsapp-chat">
+        <div class="whatsapp-chat-titulo">
+            Escríbenos
+        </div>
+        <textarea
+            id="mensajeWhatsApp"
+            placeholder="Escribe tu mensaje..."
+            rows="3"></textarea>
+        <button type="button" id="btnEnviarWhatsApp" target="_blank">
+            Enviar por WhatsApp
+        </button>
+    </div>
+    <a href="https://wa.me/573043857629"
+        class="whatsapp-rgb"
+        target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-rgb-icon">
+            <img src="ico/ico-what-flot.webp" alt="WhatsApp">
+        </span>
+    </a>
+</div>
+
+<script>
+const botonWhatsApp = document.getElementById("btnEnviarWhatsApp");
+botonWhatsApp.addEventListener("click", function () {
+    const campo = document.getElementById("mensajeWhatsApp");
+    const mensaje = campo.value.trim();
+    if (mensaje === "") {
+        campo.focus();
+        return;
+    }
+    const numero = "573043857629";
+    const enlaceWhatsApp =
+        "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
+
+    window.open(enlaceWhatsApp, "_blank");
+    campo.value = "";
+});
+</script>
+<script src="js/contacto.js"></script>
+</body>
+</html>

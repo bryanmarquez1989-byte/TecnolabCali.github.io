@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoLab | Bienvenidos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo-ico.webp">
+    
+    
+</head>
+
+<body>
+    <header class="hero">
+        <nav>            
+            <a href="quienes-somos.html">Quiénes Somos</a>
+            <a href="Planos.html">Planos Esquemáticos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+     
+    <main>
+        <div class="logo-principal">
+            <div>
+                <img src="img/logo-tecnolab.webp" class="logo-principal" alt="reparacion de computadores">
+            </div>
+        </div>
+
+    <section class="servicios">
+
+        <h1 class="titulo-servicios">
+            Conoce nuestros servicios
+        </h1>
+
+        <p class="subtitulo-servicios">
+            Soluciones avanzadas para tus equipos electrónicos</p>
+
+        <a href="servicios.html#computadores" class="servicio-banda">
+            <div class="servicio-contenido">
+
+                <h2>Servicio Especializado de Computadores y Macbooks</h2>
+                <p> Diagnóstico, reparación y mantenimiento de equipos de escritorio, 
+                    portátiles, línea Gamer, Macbooks y iMacs con fallas de hardware (fallas en board y componentes)
+                    y software (Sistema Windows y MacOS).</p>
+            </div>
+        </a>
+
+        <a href="servicios.html#celulares" class="servicio-banda">
+            <div class="servicio-contenido">
+
+                <h2>Servicio Especializado de iPhone y Android</h2>
+                <p> Diagnóstico y reparación de dispositivos iPhone y Android con 
+                    problemas de encendido, carga, batería, pantalla y fallas electrónicas.</p>
+            </div>
+        </a>
+
+        <a href="servicios.html#televisores" class="servicio-banda">
+            <div class="servicio-contenido">
+
+                <h2>Servicio Especializado de Televisores</h2>
+                <p> Diagnóstico y reparación de televisores con problemas
+                    de imagen, sonido, alimentación, encendido y tarjetas
+                    electrónicas.</p>
+            </div>
+        </a>
+
+        <a href="servicios.html#consolas" class="servicio-banda">
+            <div class="servicio-contenido">
+
+                <h2>Servicio Especializado de Consolas Xbox y PlayStation</h2>
+                <p> Diagnóstico y reparación de consolas de videojuegos,
+                    con problemas de encendido, imagen, temperatura
+                    y funcionamiento electrónico.</p>
+            </div>
+        </a>
+
+        <a href="servicios.html#recuperacion-datos" class="servicio-banda">
+            <div class="servicio-contenido">
+
+                <h2>Desarrollo y Recuperación de Datos</h2>
+                <p> Recuperamos lo que creías perdido y creamos soluciones digitales
+                     a tu medida: apps, software de escritorio y páginas web.</p>
+            </div>
+        </a>
+
+    </section>
+    </main>
+
+    <footer>
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            <img src="img/logo-tecnolab.webp" class="logo-footer" alt="reparacion de portatiles">
+            <p><img src="ico/ico-llamada.webp" class="phone-ico" alt="telefono"> <img src="ico/ico-whatsapp.webp" class="whatsapp-ico" alt="whatsapp"> 304 385 7629</p>
+            <p><img src="ico/ico-ubicacion.webp" class="location-ico" alt="ubicacion"> Cra 43 #12b-27 Barrio Panamericano • Cali, Colombia.</p>
+        </div>
+
+        <div class="footer-servicios">
+            <h3>Servicios</h3>
+            <ul>
+                <p>Reparación de Portátiles</p>
+                <p>Reparación de Macbooks y iPhones</p>
+                <p>Reparación de Equipos Gamer y Consolas</p>
+                <p>Recuperación de Datos</p>
+                <p>Reparación de Televisores</p>
+            </ul>
+        </div>
+
+        <div class="footer-servicios">            
+            <h3>Nosotros</h3>
+            
+            <ul class="footer-links">
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="Planos.html">Planos Esquemáticos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </footer>
+
+<div class="whatsapp-contenedor">
+    <div class="whatsapp-chat">
+        <div class="whatsapp-chat-titulo">
+            Escríbenos
+        </div>
+        <textarea
+            id="mensajeWhatsApp"
+            placeholder="Escribe tu mensaje..."
+            rows="3"></textarea>
+        <button type="button" id="btnEnviarWhatsApp" target="_blank">
+            Enviar por WhatsApp
+        </button>
+    </div>
+    <a href="https://wa.me/573043857629"
+        class="whatsapp-rgb"
+        target="_blank"
+        aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-rgb-icon">
+            <img src="ico/ico-what-flot.webp" alt="WhatsApp">
+        </span>
+    </a>
+</div>
+
+<script>
+const botonWhatsApp = document.getElementById("btnEnviarWhatsApp");
+botonWhatsApp.addEventListener("click", function () {
+    const campo = document.getElementById("mensajeWhatsApp");
+    const mensaje = campo.value.trim();
+    if (mensaje === "") {
+        campo.focus();
+        return;
+    }
+    const numero = "573043857629";
+    const enlaceWhatsApp =
+        "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensaje);
+
+    window.open(enlaceWhatsApp, "_blank");
+    campo.value = "";
+});
+</script>
+
+</body>
+</html>
