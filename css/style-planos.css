@@ -1,0 +1,667 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.hero{
+    min-height:120px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+body{
+    background-image:url("../img/fondo3.webp");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    transform: translate(0%);
+    width:100%;
+    max-width:1400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;   
+    padding:10px 0px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+    border:1px solid rgba(255,255,255,0.18);
+    border-radius:1px;
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.25);
+    z-index:1000;    
+}
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:1.4rem;
+    font-weight:bold;    
+    display:inline-block;
+    transition: all .3s ease;
+}
+nav a:hover{
+    color:#00AEEF;
+    transform: translateY(-2px);
+    text-shadow:
+        0 0 5px rgba(0,174,239,.4),
+        0 0 12px rgba(0,174,239,.25);
+}
+nav a.activo,
+nav a.activo:hover{
+    color:#00AEEF;
+    border-bottom:2px solid #00AEEF;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 5px;
+}
+.logo-menu img{
+    width: 150px;
+    height: auto;
+    display: flex;
+}
+.menu-hero{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: rgba(0, 3, 7, 0.852); 
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px 0px 45px;
+    flex: 1;
+    min-width: 150px;
+}
+.logo-footer{
+    display: block;
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.footer-logo p{
+    margin-bottom:5px;
+    font-family:'Manrope', sans-serif;
+    font-size:13px;
+    font-weight:550;
+    letter-spacing:0px;
+    text-transform:none;
+    color:white;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    line-height: 1.5;
+}
+.phone-ico,
+.whatsapp-ico,
+.location-ico {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+}
+.footer-servicios {
+    flex: 1;
+    min-width: 250px;
+    padding: 22px;
+}
+.footer-servicios h3{
+    margin-bottom:8px;
+    font-family:'Manrope', sans-serif;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+.footer-servicios p{
+    margin-bottom:8px;
+    font-family:'Manrope', sans-serif;
+    font-size:10px;
+    font-weight:520;
+    letter-spacing:0px;
+    text-transform:uppercase;
+}
+.footer-container{
+    background-color: rgba(159, 6, 6, 0.817);
+}
+.footer-servicios{
+    color:white
+}
+.footer-links{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links a{
+    color: white;             
+    text-decoration: none;
+    font-size: 10px;
+    transition: .3s;
+    margin-bottom:8px;
+    font-family:'Manrope', sans-serif;
+    font-size:10px;
+    font-weight:520;
+    letter-spacing:0px;
+    text-transform:uppercase;
+}
+.contenedor-planos{
+    width:70%;
+    max-width:1200px;
+    margin:20px auto 120px auto;
+    background:transparent;
+    padding:30px;
+}
+.lista-planos{
+    background:rgba(255,255,255,0.03);
+    backdrop-filter:blur(1px);
+    -webkit-backdrop-filter:blur(1px);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0, 0, 0, 0.25);
+}
+.quienes-somos {
+    width: 90%;
+    max-width: 1050px;
+    margin: 35px auto 100px;
+}
+.titulo-planos {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow:
+    0 0 5px #ffffff,
+    0 0 9px #dc0000,
+    0 0 10px #e90000,
+    0 0 15px rgba(214, 40, 0, 0.717);
+    margin-bottom: 55px;
+    position: relative;
+    z-index: 2;
+}
+.descripcion-planos{
+    font-family:'Manrope', sans-serif;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:0.2px;
+    color:#f9f5f5;
+    line-height:2;
+    text-align: left;
+}
+.lista-planos li{
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.lista-planos li:last-child{
+    border-bottom:none;
+}
+.lista-planos a{
+    display:block;
+    padding:15px 20px;
+    font-family:'Manrope', sans-serif;
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:0.2px;
+    text-decoration:none;
+    color:#ffffff;
+    background:transparent;
+    transition: all 0.3s;
+}
+.lista-planos a:hover{
+    background:#0A84FF;
+    color:white;
+    padding-left:40px;
+}
+#buscador{
+    width:100%;
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+.paginacion{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+.paginacion button{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:#f0f0f0;
+}
+.paginacion button:hover{
+    background:#0A84FF;
+    color:rgb(255, 255, 255);
+}
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+footer{
+    margin-top:60px;
+}
+#paginacion{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:30px;
+}
+#paginacion button{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:8px;
+    background:#f2f2f2;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:bold;
+}
+#paginacion button:hover{
+    background:#0A84FF;
+    color:white;
+}
+#paginacion button.activo{
+    background:#0A84FF;
+    color:white;
+}
+.descargas-programas{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin:0 auto 30px auto;
+    flex-wrap:wrap;
+}
+.programa-descarga{
+    width:160px;
+    min-height:50px;
+    padding:9px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:rgba(255,255,255,0.04);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:10px;
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.25);
+    transition:
+        transform .3s ease,
+        border-color .3s ease;
+}
+.programa-descarga:hover{
+    transform:translateY(-3px);
+    border-color:rgba(0,229,255,0.55);
+}
+.programa-descarga img{
+    width:38px;
+    height:38px;
+    object-fit:contain;
+}
+.programa-info{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+.programa-info span{
+    font-family:'Manrope',sans-serif;
+    font-size:11px;
+    font-weight:700;
+    color:#ffffff;
+}
+.programa-info a{
+    font-family:'Manrope',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    color:#00E5FF;
+    text-decoration:none;
+}
+.programa-info a:hover{
+    color:#ffffff;
+}
+.whatsapp-rgb {
+    position: fixed;
+    left: 25px;
+    bottom: 180px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    text-decoration: none;
+    z-index: 9999;
+    isolation: isolate;
+}
+.whatsapp-rgb::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 3px;
+    background: conic-gradient(
+        from 0deg,
+        #00E5FF,
+        #008CFF,
+        #7A5CFF,
+        #D946EF,
+        #00E5FF
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    animation: whatsapp-rgb-rotate 5s linear infinite;
+    filter:
+        drop-shadow(0 0 20px #00E5FF)
+        drop-shadow(0 0 22px #008CFF)
+        drop-shadow(0 0 26px #7A5CFF);
+    pointer-events: none;
+    z-index: -1;
+}
+.whatsapp-rgb-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #25D366;
+    box-shadow:
+        0 0 6px rgba(37, 211, 102, 0.35);
+    transition: transform 0.3s ease;
+}
+.whatsapp-rgb-icon img {
+    width: 25px;
+    height: 25px;    
+}
+.whatsapp-rgb:hover .whatsapp-rgb-icon {
+    transform: scale(1.08);
+}
+@keyframes whatsapp-rgb-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.whatsapp-rgb-text {
+    position: absolute;
+    left: 65px;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+    pointer-events: none;
+}
+.whatsapp-rgb:hover .whatsapp-rgb-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.whatsapp-contenedor {
+    position: fixed;
+    left: 25px;
+    bottom: 100px;
+    z-index: 9999;
+}
+.whatsapp-chat {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    width: 250px;
+    padding: 16px;
+    box-sizing: border-box;
+    background: rgba(10, 15, 25, 0.90);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+.whatsapp-contenedor:hover .whatsapp-chat {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.whatsapp-chat-titulo {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.whatsapp-chat textarea {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+.whatsapp-chat textarea::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+.whatsapp-chat button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 9px;
+    border: none;
+    border-radius: 7px;
+    background: #25D366;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.whatsapp-chat button:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    body {
+        background-image: none;
+        background-color: #000307;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("../img/fondo3.webp");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: 70% center;
+        z-index: -10;
+        pointer-events: none;
+    }
+    nav{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        gap:12px;
+        padding:8px 5px;
+        flex-wrap:wrap;
+    }
+    nav a{
+        font-size:0.85rem;
+    }
+    .menu{
+        padding:8px 5px;
+    }
+    .logo-menu img{
+        width:110px;
+    }
+    .menu-hero{
+        gap:12px;
+    }
+    .contenedor-planos{
+        width:94%;
+        max-width:none;
+        margin:30px auto 70px auto;
+        padding:15px;
+    }
+    .titulo-planos{
+        font-size:30px;
+        line-height:1.2;
+        margin-top:-20px;
+        margin-bottom:15px;
+    }
+    .descripcion-planos{
+        width:100%;
+        font-size:16px;
+        line-height:1.6;
+        margin:0 0 5px 0;
+        text-align:center;
+    }
+    .lista-planos a{
+        padding:13px 15px;
+        font-size:14px;
+    }
+    .lista-planos a:hover{
+        padding-left:20px;
+    }
+    #buscador{
+        width:100%;
+        padding:12px;
+        font-size:11px;
+    }
+    .paginacion{
+        margin-top:25px;
+        gap:7px;
+    }
+    .paginacion button,
+    #paginacion button{
+        width:36px;
+        height:36px;
+    }
+    #paginacion{
+        gap:6px;
+        margin-top:25px;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-logo {
+        padding: 20px;
+        align-items: center;
+    }
+    .logo-footer {
+        width: 170px;
+    }
+    .footer-servicios {
+        width: 100%;
+        min-width: 0;
+        padding: 5px;
+        text-align: center;
+    }
+    .whatsapp-contenedor {
+        left: 15px;
+        bottom: 25px;
+    }
+    .whatsapp-rgb {
+        width: 52px;
+        height: 52px;
+    }
+    .whatsapp-rgb-icon {
+        width: 38px;
+        height: 38px;
+    }
+    .whatsapp-rgb-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .whatsapp-chat {
+        width: 230px;
+        bottom: 65px;
+        left: 0;
+        display: none;
+    }
+    .whatsapp-contenedor:hover .whatsapp-chat {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+    }
+    .whatsapp-chat.whatsapp-chat-abierto {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .descargas-programas{
+    gap:12px;
+    }
+    .programa-descarga{
+    width:170px;
+    }
+    .programa-descarga img{
+    width:40px;
+    height:40px;
+    }
+}
